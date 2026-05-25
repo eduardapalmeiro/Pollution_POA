@@ -1,0 +1,13 @@
+body{
+  background-color: #6EE550;
+}
+
+.title {
+	color: #FFFFFF;
+}
+
+#ContadorDenuncias {
+  border-radius: 5px;
+  width: 100px;
+  background-color: #FFFFFF;
+}
