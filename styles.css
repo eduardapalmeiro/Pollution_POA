@@ -1,13 +1,19 @@
 body{
-  background-color: #6EE550;
+  background-image: url("src/fundosite001.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .title {
-	color: #FFFFFF;
+	color: #a33232;
 }
 
 #ContadorDenuncias {
   border-radius: 5px;
   width: 100px;
   background-color: #FFFFFF;
+}
+
+#garota {
+  width: 80%;
 }
