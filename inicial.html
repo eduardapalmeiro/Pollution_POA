@@ -5,17 +5,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <div id="Cabecalho">
-        <a href="inicial.html"><button>Inicio</button></a>
-        <a href="mapa.html"><button>Mapa</button></a>
-        <a href="denuncias.html"><button>Denuncias</button></a>
-      </div>
+
+    <div id="BigCaixa">
       <h1 class="title">Poluição em POA</h1>
+
       <div id="CaixaPrincipal">
-          <div id="ContadorDenuncias">
-            <p>Denuncias ativas</p>
-          </div>
-          <img id="garota" src="src/menena.png">
+
+        <div id="ContadorDenuncias">
+          <p id="ValorContador"></p>
+          <p>Denuncias ativas</p>
+          <button id="botaoTestar">Testar Incremento (+1)</button>
+        </div>
+
       </div>
+
+      <div id="Cabecalho">
+        <a href="inicial.html"><button class="BotaoInicial">Inicio</button></a>
+        <a href="mapa.html"><button class="BotaoInicial">Mapa</button></a>
+        <a href="denuncias.html"><button class="BotaoInicial">Denuncias</button></a>
+      </div>
+
+    </div>
+
+    <img id="garota" src="src/menena.png">
+
+    <script src="scripts.js"></script>
   </body>
 </html>
