@@ -1,49 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Unkempt:wght@400;700&display=swap');
 
-body{
-  
+body {
   background-image: url("src/fundosite001.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .title {
-	color: #3c8918;
+  color: #3c8918;
   font-size: 40px;
   font-family: "Henny Penny", system-ui;
   margin-left: 55%;
   margin-bottom: -40px;
 }
 
+h2,h3{
+  color: #3c8918;
+  margin-top: 0;
+}
+
 #BigCaixa {
   position: relative;
-
   margin-left: 32%;
   margin-top: 13%;
   min-height: 250px;
-}
-
-#ContadorDenuncias {
-  border-radius: 20px;
-  width: 40%;
-  height: 455px;
-  background-color: hsl(98, 100%, 98%);
-  margin-left: 2%;
-  box-shadow:5px 5px 10px #a1dc85;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  font-family: "Unkempt", cursive;
-	color: #3c8918;
-  font-size: 50px;
-
-}
-
-#ValorContador {
-  margin: 0%;
 }
 
 #CaixaPrincipal {
@@ -51,7 +31,7 @@ body{
   width: 89%;
   height: 50%;
   border-radius: 10px;
-  box-shadow:5px 5px 10px #6ab845;
+  box-shadow: 5px 5px 10px #6ab845;
   padding-top: 2%;
   padding-bottom: 3%;
   margin-top: 1.5%;
@@ -61,23 +41,21 @@ body{
   margin-top: 2%;
   margin-left: 7%;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   gap: 20px;
-
 }
 
-.BotaoInicial {
+button {
   width: 300px;
   height: 50px;
   background-color: #e4ffd8;
   border: none;
   border-radius: 10px;
   font-family: "Unkempt", cursive;
-	color: #3c8918;
+  color: #3c8918;
   font-size: 20px;
-  box-shadow:5px 5px 10px #6ab845;
+  box-shadow: 5px 5px 10px #6ab845;
 }
-
 
 #garota {
   position: absolute;
@@ -86,4 +64,111 @@ body{
   z-index: 99; 
   width: 80%;
   pointer-events: none;
+}
+
+/* geral */
+.layoutInicial {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-evenly; 
+}
+
+#ContadorDenuncias {
+  border-radius: 20px;
+  width: 40%;
+  height: 455px;
+  background-color: hsl(98, 100%, 98%);
+  margin-left: 2%;
+  box-shadow: 5px 5px 10px #a1dc85;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Unkempt", cursive;
+  color: #3c8918;
+  font-size: 50px;
+}
+
+#textoInicial {
+  width: 50%;
+  height: 300px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Unkempt", cursive;
+  color: #133005;
+  font-size: 35px;
+}
+
+#ValorContador {
+  margin: 0%;
+}
+
+/* especifiso */
+.conteudo-caixa {
+  padding: 20px;
+  height: 90%;
+  overflow-y: auto;
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #2b6311;
+  margin-bottom: 3px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 90%;
+  padding: 5px;
+  border: 1px solid #3c8918;
+  border-radius: 4px;
+}
+
+.btn-enviar {
+  width: 200px;
+  height: 33.3px;
+  box-shadow: none;
+  background-color: #3c8918;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-enviar:hover {
+  background-color: #2b6311;
+}
+
+#areaGerenciamento {
+  margin-top: 25px;
+  border-top: 2px dashed #3c8918;
+  padding-top: 15px;
+}
+
+.botaoExcluir {
+  width: 200px;
+  height: 33.3px;
+  box-shadow: none;
+  background: red; 
+  color: white; 
+  border: none; 
+  border-radius: 3px; 
+  cursor: pointer;
 }
