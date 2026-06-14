@@ -105,17 +105,6 @@ function renderizarCards() {
   });
 }
 
-function calcularEstatisticas() {
-  const listaFocos = document.getElementById('listaFocos');
-  if (!listaFocos || vetorDenuncias.length === 0) return;
-
-  const totalEsgoto = vetorDenuncias.filter(d => d.tipo === "Esgoto").length;
-  const stats = document.createElement('div');
-  stats.style.cssText = "margin-top:15px;font-weight:bold;color:#2b6311";
-  stats.innerHTML = `<hr style="border:1px dashed #3c8918">
-     Estatística: ${totalEsgoto} caso(s) de Esgoto reportados em POA.`;
-  listaFocos.appendChild(stats);
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   exibirContador();
