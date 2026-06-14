@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <title>POAluição - Denúncias</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
 
-    <div id="BigCaixa">
-      <h1 class="title">Poluição em POA</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>POAluição - Denúncias</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <div id="CaixaPrincipal">
-        <div class="conteudo-caixa">
-          
-          <h2>Registrar Nova Denúncia</h2>
-          
-          <form id="formDenuncia">
-            <div class="form-group">
-              <label>Bairro:</label>
-              <select id="bairro" required>
-                <option value="">Selecione...</option>
-                <option value="Centro Histórico">Centro Histórico</option>
-                <option value="Sarandi">Sarandi</option>
-                <option value="Restinga">Restinga</option>
-                <option value="Cidade Baixa">Cidade Baixa</option>
-              </select>
-            </div>
-            
-            <div class="form-group">
-              <label>Endereço ou Referência:</label>
-              <input type="text" id="endereco" placeholder="Ex: Esquina da Av. Ipiranga..." required>
-            </div>
+<body>
 
-            <div class="form-group">
-              <label>Tipo de Poluição:</label>
-              <select id="tipoPoluicao" required>
-                <option value="">Selecione...</option>
-                <option value="Lixo Irregular">Descarte Irregular de Lixo</option>
-                <option value="Esgoto">Esgoto a Céu Aberto</option>
-                <option value="Ar">Poluição do Ar</option>
-              </select>
-            </div>
+  <div id="BigCaixa">
+    <h1 class="title">Poluição em POA</h1>
 
-            <button type="submit" class="btn-enviar">Salvar Denúncia</button>
-          </form>
+    <div id="CaixaPrincipal">
+      <div class="conteudo-caixa">
 
-          <div id="areaGerenciamento">
-            <h3>Gerenciar Minhas Denúncias</h3>
-            <ul id="listaMinhasDenuncias">
-              <li><i>Nenhuma denúncia registrada ainda.</i></li>
-            </ul>
+        <h2 id="renode">Registrar Nova Denúncia</h2>
+
+        <form id="formDenuncia">
+          <div class="form-group">
+            <label>Bairro:</label>
+            <select id="bairro" required>
+              <option value="">Selecione...</option>
+              <option value="Centro Histórico">Centro Histórico</option>
+              <option value="Sarandi">Sarandi</option>
+              <option value="Restinga">Restinga</option>
+              <option value="Cidade Baixa">Cidade Baixa</option>
+            </select>
           </div>
 
+          <div class="form-group">
+            <label>Endereço ou Referência:</label>
+            <input type="text" id="endereco" placeholder="Ex: Esquina da Av. Ipiranga..." required>
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de Poluição:</label>
+            <select id="tipoPoluicao" required>
+              <option value="">Selecione...</option>
+              <option value="Descarte irregular">Descarte Irregular de Lixo</option>
+              <option value="Esgoto a céu aberto">Esgoto a Céu Aberto</option>
+              <option value="Poluição do ar">Poluição do Ar</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-enviar">Salvar Denúncia</button>
+        </form>
+
+        <div id="areaGerenciamento">
+          <h3>Gerenciar Minhas Denúncias</h3>
+          <ul id="listaMinhasDenuncias">
+            <li><i>Nenhuma denúncia registrada ainda.</i></li>
+          </ul>
         </div>
-      </div>
 
-      <div id="Cabecalho">
-        <a href="index.html"><button>Inicio</button></a>
-        <a href="mapa.html"><button>Mapa</button></a>
-        <a href="denuncias.html"><button>Denuncias</button></a>
       </div>
-
     </div>
 
-    <img id="garota" src="src/menena.png" style="pointer-events: none;">
+    <div id="Cabecalho">
+      <a href="index.html"><button>Inicio</button></a>
+      <a href="mapa.html"><button>Mapa</button></a>
+      <a href="denuncias.html"><button>Denuncias</button></a>
+    </div>
 
-    <script src="scripts.js"></script>
-  </body>
+  </div>
+
+  <img id="garota" src="src/menina.png" style="pointer-events: none;">
+
+  <script src="scripts.js"></script>
+</body>
+
 </html>
